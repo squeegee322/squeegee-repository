@@ -19,3 +19,9 @@ personal_info = {"Фамилия": "Багаутдинов", "Номер кол�
 skills = {"Футбол": 9, "Теннис": 10, "Японский": 10}
 visited_countries = {'Afganistan', 'japan', 'Vietnam'}
 has_driver_license = True
+# ex 3
+a = "Intel(R)Core(TM)i7-12700KF"
+b = 32
+c = (82.38, 83.54)
+state = ["Intel(R)Core(TM)i7-12700KF",32,82.38,83.54]
+print (state)
