@@ -1,0 +1,5 @@
+# 1 ex
+his_age = int(input("Введите ващ возраст: "))
+him_age = int(input("Введите возраст вашего друга: "))
+sum_age = his age + him_age
+print ('Сумма ваших возрастов', sum_age)
