@@ -4,7 +4,7 @@ substring = phrase[0]
 print(substring)
 substring = phrase[14]
 print(substring)
-substring = phrase[18]
+substring = phrase[-1]
 print(substring)
 #ex 2
 numbers = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
