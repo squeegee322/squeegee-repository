@@ -15,5 +15,9 @@ print("Меню:\n1. Суп\n2. Паста\n3. Десерт")
 # ex4 
 print("*****\n*****\n*****")
 # ex5 
-x = int(input("Число:"))
-print(f"{x-3} {x-2} {x-3}\n{x}\n{x+3} {x+2} {x+1}")
+x = int(input("Введите Число: "))
+a = [x-3, x-2, x-1]
+b = [x+3, x+2, x+1]
+print(a)
+print(x)
+print(b)
