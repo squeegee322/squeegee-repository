@@ -3,3 +3,12 @@ his_age = int(input("Введите ващ возраст: "))
 him_age = int(input("Введите возраст вашего друга: "))
 sum_age = his age + him_age
 print ('Сумма ваших возрастов', sum_age)
+ex 2
+My_name = input("Введите свое имя: ")
+My_firstname = input("Введите свою фамилию:")
+print("Привет,",My_name + " " + My_firstname  )
+ex3
+soup = "Суп"
+pasta = "Паста"
+desert = "Десерт"
+print("Меню:\n1. Суп\n2. Паста\n3. Десерт")
