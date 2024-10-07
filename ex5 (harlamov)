@@ -1,0 +1,8 @@
+ex 1
+age = int(input("возраст"))
+if age < 18:
+    print("Вы несовершеннолетний")
+elif age > 18 and age < 65:
+    print("Вы трудноспособный человек")
+else: #age > 65
+    print("Вы пенсонер")
