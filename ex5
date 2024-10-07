@@ -6,3 +6,11 @@ elif age > 18 and age < 65:
     print("Вы трудноспособный человек")
 else: #age > 65
     print("Вы пенсонер")
+# ex 2
+price = int(input ("Введите сумму"))
+if price  < 1000:
+    print ("Нет скидки")
+elif price > 1000 and price < 5000:
+    print("Скидка 5%")
+elif price > 5000:
+    print ("Скидка 10 %")
