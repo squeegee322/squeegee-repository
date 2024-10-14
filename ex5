@@ -21,3 +21,17 @@ if num % 2 == 0 and num % 10 == 2 or num % 10 == 0:
     print ("true")
 else:
     print ("false")
+# ex 5 
+true_password = ("asd")
+password = input("введите пароль")
+if password == true_password:
+    print ("Доступ разрешен")
+else:
+    print ("Доступ запрещен")
+# ex 7
+n = int(input("введите 1 число"))
+k = int(input("введите 2 число"))
+if n%k == 0:
+    print("число кратное")
+else:   
+    print("число не кратное")
