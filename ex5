@@ -14,6 +14,20 @@ elif price > 1000 and price < 5000:
     print("Скидка 5%")
 elif price > 5000:
     print ("Скидка 10 %")
+ex 3 
+chislo1 = int(input("Введите первое число"))
+chislo2 = int(input("Введите второе число"))
+operation = str(input("Введите операцию")
+if operation == '+':
+    print(chislo1 + chislo2)
+elif operation == '-':
+    print(chislo1 - chislo2)
+elif operation == '*':
+    print(chislo1 * chislo2)
+elif operation == '/':
+    print(chislo1 / chislo2)
+else:
+    print("Неверная операция")
 
 # ex 4
 num = int(input("Введите число:"))
