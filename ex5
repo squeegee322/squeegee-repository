@@ -17,7 +17,7 @@ elif price > 5000:
 
 # ex 4
 num = int(input("Введите число:"))
-if num % 2 == 0 and num % 10 == 6 : 
+if num % 2 == 0 and num % 10 == 2 or num % 10 == 0:
     print ("true")
 else:
     print ("false")
