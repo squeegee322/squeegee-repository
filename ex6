@@ -9,3 +9,8 @@ for ostanovka in stations:
         print(f'Поезд на станции: {ostanovka} Конченая!')
     else:
         print(f"Поезд на станции: {ostanovka}")
+ex#2
+phrase = "I'm learning cycles."
+for i in range(10):
+    print(phrase)
+ex#4
