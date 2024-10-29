@@ -2,3 +2,10 @@ ex#1
 names = ["Richard", "Igor", "Jonathan", "Alice", "Mary", "Bonnie"]
 for i in names:
     print('hello', i,'!')
+ex#3
+stations = ["Малиновка", "Рябиновка", "Суслово", "Дрожжино", "Звягино"]
+for ostanovka in stations:
+    if ostanovka == stations [-1]:
+        print(f'Поезд на станции: {ostanovka} Конченая!')
+    else:
+        print(f"Поезд на станции: {ostanovka}")
