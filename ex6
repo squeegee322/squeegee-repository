@@ -14,3 +14,24 @@ phrase = "I'm learning cycles."
 for i in range(10):
     print(phrase)
 ex#4
+shop = ["Laptop", "Smartphone", "Watch", "Tablet", "Headphones"]
+
+for item in shop:
+    if item == "Laptop":
+        print("I'm buying this.")
+    else:
+        print("I don't need it.")
+ex 5 
+tasks = ["Сдать проект (Важная)", "Сходить в магазин", "Позвонить врачу (Важная)", "Убраться в комнате", "Подготовить отчёт"]
+
+for index, task in enumerate(tasks, start=1):
+    if "Важная" in task:
+        print(f"{index}: {task}!")
+    else:
+        print(f"{index}: {task}")tasks = ["Сдать проект (Важная)", "Сходить в магазин", "Позвонить врачу (Важная)", "Убраться в комнате", "Подготовить отчёт"]
+
+for index, task in enumerate(tasks, start=1):
+    if "Важная" in task:
+        print(f"{index}: {task}!")
+    else:
+        print(f"{index}: {task}")
