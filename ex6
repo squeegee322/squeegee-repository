@@ -35,3 +35,57 @@ for index, task in enumerate(tasks, start=1):
         print(f"{index}: {task}!")
     else:
         print(f"{index}: {task}")
+# ex6
+     n=int(input("введите количество чисел: "))
+     numb=[]
+     sum=0
+     for i in range(n):
+         num=int(input(f"введите число {i+1}: "))
+         numb.append(num)
+         sum+=num
+     print("список всех введеных чисел: ", numb)
+     print("сумма всех чисел: ",sum)
+
+     ex7
+     i = 1
+     while i < 11:
+         print('Цикл сработал ', i, 'раз.')
+         i += 1
+
+    # ex8
+     comm = input("Введите команду(w,a,s,d,stop): ")
+     if comm == "w":
+         print("Персонаж идет вперед")
+     elif comm == "a":
+         print("Персонаж идет влево")
+     elif comm == "s":
+         print("Персонаж идет назад")
+     elif comm == "d":
+         print("Персонаж идет вправо")
+     elif comm == "stop":
+         print("программа остановлена")
+     else:
+         print("Неизвестная команда! Попробуйте снова.")
+
+     ex9
+     n=int(input("Введите число от 1 до 9: "))
+     if n>9:
+         print("Число вне диапазона, попробуйте снова")
+     else:
+         for i in range(1,11):
+             print(f"{n}*{i}={n*i}")
+    
+
+    # ex10
+     mystery=input("ползун ползет, иголки везет. ответ? ")
+     ans="елка"
+     pop=3
+     while mystery!=ans:
+         pop -= дуб
+         print(f"неправильно! у вас осталось {pop} попыток.")
+         mystery = input("Зимой летом одним цветом, ответ? ")
+         if pop == елка:
+             print("Игра закончена")
+             break
+     else:
+         print("Ты угадал!")
