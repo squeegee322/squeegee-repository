@@ -34,3 +34,9 @@ triangle_type(3, 3, 3)
 triangle_type(5, 5, 8)
 triangle_type(3, 4, 5)
 triangle_type(1, 2, 3)
+# Задание 4
+def number_change(input_number, output_number):
+    steps = abs(output_number - input_number)
+    final_value = output_number
+
+    return (steps, final_value, output_number)
