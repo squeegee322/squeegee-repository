@@ -1,10 +1,10 @@
-#Задание 1
+                                                        #Задание 1
 def create_car(brand: str, color: str, max_speed: int):
     return f"Марка: {brand} Цвет: {color} Максимальная скорость: {max_speed} км/ч"
 car_info = create_car("Mercedes", "Черный", 350)
 print(car_info)
 
-#Задание 2
+                                                        #Задание 2
 def switch_check(switch):
     if switch is True:
         print("True работает")
@@ -19,7 +19,7 @@ switch_check(switch_1)
 switch_check(switch_2)
 switch_check(switch_3)
 
-#Задание 3
+                                                        #Задание 3
 def triangle_type(side1: float, side2: float, side3: float) -> None:
     if (side1 + side2 > side3) and (side1 + side3 > side2) and (side2 + side3 > side1):
         if side1 == side2 == side3:
@@ -34,13 +34,13 @@ triangle_type(3, 3, 3)
 triangle_type(5, 5, 8)
 triangle_type(3, 4, 5)
 triangle_type(1, 2, 3)
-# Задание 4
+                                                        # Задание 4
 def number_change(input_number, output_number):
     steps = abs(output_number - input_number)
     final_value = output_number
 
     return (steps, final_value, output_number)
-# Задание 5
+                                                        # Задание 5
 player = 0
 
 def info_player():
@@ -54,3 +54,19 @@ info_player()
 run_player(30)
 run_player(12.5)
 info_player()
+                                                        # Задание 6
+
+def analyze_number(number: int) -> str:
+    if number == 0:
+        return "Ошибка. Число равно нулю."
+    is_positive = number > 0
+    is_even = number % 2 == 0
+    digit_count = len(str(abs(number)))
+    return (f"Число: {number}\n"
+            f"Положительное: {is_positive}\n"
+            f"Чётное: {is_even}\n"
+            f"Количество цифр: {digit_count}")
+print(analyze_number.__doc__) 
+print(analyze_number(42))  
+print(analyze_number(-15))  
+print(analyze_number(0)) 
