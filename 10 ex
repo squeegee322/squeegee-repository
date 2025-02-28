@@ -22,3 +22,44 @@ class MinecraftLauncher:
 if __name__ == "__main__":
     launcher = MinecraftLauncher()
     launcher.launch_game()
+
+
+#ex 2
+
+class File:
+    def __init__(self, filename, size):
+        self.filename = filename
+        self.size = size
+
+    def open(self):
+        print(f"Открытие файла {self.filename}")
+
+    def info(self):
+        return f"Имя: {self.filename}, размер: {self.size} кб"
+
+
+class TextFile(File):
+    def __init__(self, filename, size, encoding):
+        super().__init__(filename, size)
+        self.encoding = encoding
+
+    def open(self):
+        print(f"Открытие текстового файла {self.filename} с кодировкой {self.encoding}")
+
+
+class ImageFile(File):
+    def __init__(self, filename, size, resolution):
+        super().__init__(filename, size)
+        self.resolution = resolution
+
+    def open(self):
+        print(f"Открытие изображения {self.filename} с разрешением {self.resolution}")
+
+text_file = TextFile("doc.txt", 177, "utf-8")
+image_file = ImageFile("photo.jpg", 2500, "1200x1900")
+
+text_file.open()
+image_file.open()
+
+print(text_file.info())
+print(image_file.info())
