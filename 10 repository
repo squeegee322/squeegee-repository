@@ -2,27 +2,26 @@
 import os
 import subprocess
 
-class MinecraftLauncher:
-    def __init__(self, game_folder="C:\\Game\\Minecraft"):
-        self.game_folder = game_folder
-        self.executable = os.path.join(self.game_folder, "MinecraftLauncher.exe")
+class GameLauncher:
+    def __init__(self, name, path):
+        self.name = name
+        self.path = path
 
-    def is_game_installed(self):
-        """Проверяет, установлен ли Minecraft в указанной папке"""
-        return os.path.exists(self.executable)
-
-    def launch_game(self):
-        """Запускает Minecraft, если он установлен"""
-        if self.is_game_installed():
-            print("Запуск Minecraft...")
-            subprocess.Popen(self.executable, shell=True)
+    def run(self):
+        if os.path.exists(self.path):
+            print(f"Игра {self.name} успешно запущена с пути: {self.path}")
+            subprocess.Popen([self.path])
         else:
-            print("Ошибка: игра Minecraft не найдена в указанной папке!")
+            print(f"Ошибка: Игра {self.name} не запущена. Путь {self.path} не найден.")
 
-if __name__ == "__main__":
-    launcher = MinecraftLauncher()
-    launcher.launch_game()
 
+minecraft = GameLauncher("Minecraft", r"C:\Games\Minecraft\MinecraftLauncher.exe")
+gta5 = GameLauncher("GTA V", r"D:\Rockstar Games\GTA V\GTA5.exe")
+genshin = GameLauncher("Genshin Impact", r"C:\Games\Genshin Impact\GenshinImpact.exe")
+
+minecraft.run()
+gta5.run()
+genshin.run()
 
 #ex 2
 
@@ -63,3 +62,74 @@ image_file.open()
 
 print(text_file.info())
 print(image_file.info())
+
+#ex 3 
+class Racing_Car:
+    def __init__(self, brand, model, color, number):
+        self.brand = brand
+        self.model = model
+        self.color = color
+        self.number = number
+
+    def info_car(self):
+        print(f"Участник №{self.number}")
+        print(f"Автомобиль: {self.color} {self.brand} {self.model}")
+
+class Race:
+    def __init__(self, name_race):
+        self.name_race = name_race
+        self.race_participants = []
+
+    def append_participants(self, *cars):
+        for car in cars:
+            self.race_participants.append(car)
+
+    def __print_participants(self):
+        print("Участники гонки:")
+        for car in self.race_participants:
+            print(f"№{car.number} {car.brand} {car.model}")
+
+    def start_race(self):
+        print(f"{self.name_race} скоро старт!")
+        self.__print_participants()
+        print("Гонка началась.")
+
+
+car_1 = Racing_Car("Mitsubishi", "Lancer Evolution IX", "жёлтый", 28)
+car_1.info_car()
+
+car_2 = Racing_Car("Porsche", "911", "чёрный", 14)
+car_2.info_car()
+
+race_1 = Race("Кольцевые автогонки")
+race_1.append_participants(car_1, car_2)
+race_1.start_race()
+
+#ex 4
+class MusicFile:
+    def play(self):
+        print("Воспроизведение аудио файла...")
+
+class MP3File(MusicFile):
+    def play(self):
+        print("Воспроизведение MP3 файла")
+
+class WAVFile(MusicFile):
+    def play(self):
+        print("Воспроизведение WAV файла")
+
+class FLACFile(MusicFile):
+    def play(self):
+        print("Воспроизведение FLAC файла")
+
+def play_music(files):
+    for file in files:
+        file.play()
+
+# Протестируем программу
+mp3_file = MP3File()
+wav_file = WAVFile()
+flac_file = FLACFile()
+
+files = [mp3_file, wav_file, flac_file]
+play_music(files)
